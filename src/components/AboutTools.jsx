@@ -167,7 +167,7 @@ const AboutTools = () => {
     const nextSlide = () => instanceRef.current?.next();
 
     return (
-        <section className="bg-white py-16 md:py-24" ref={sectionRef}>
+        <section className="bg-gray-50 py-16 md:py-20" ref={sectionRef}>
             <div className="container mx-auto px-5 max-w-6xl">
                 {/* Header */}
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">

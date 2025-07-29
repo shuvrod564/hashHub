@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const Footer = () => {
@@ -6,10 +7,15 @@ const Footer = () => {
       <div className="container mx-auto px-5 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-y-12 gap-x-8 pb-16">
           {/* Brand Info */}
-          <div className="lg:col-span-2">
+          <div className="">
             <div className="flex items-center gap-2 text-2xl font-bold text-gray-900 mb-6">
-              <img src="/your-logo-icon.png" alt="Generix Icon" className="w-6 h-6" />
-              Generix
+              <Image
+                src={'/images/hashhub-logo.webp'}
+                alt="Hashhub Logo"
+                width={131}
+                height={50}
+                className="w-auto h-10 2xl:h-12"
+              />
             </div>
             <p className="font-semibold text-gray-800 mb-2">Contact us -</p>
             <a href="mailto:support@designspace.io" className="block text-primary-blue hover:underline mb-6">

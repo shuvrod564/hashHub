@@ -1,4 +1,5 @@
 import AboutTools from "@/components/AboutTools";
+import CallToActionSection from "@/components/CallToActionSection";
 import FAQsSection from "@/components/FAQsSection";
 import Features from "@/components/Features";
 import HomeHeader from "@/components/HomeHeader";
@@ -28,6 +29,10 @@ export default function Home() {
       {/* ABOUT TOOLS SECTION START */}
       <FAQsSection />
       {/* ABOUT TOOLS SECTION END */}
+
+      {/* CALL TO ACTION SECTION START */}
+      <CallToActionSection />
+      {/* CALL TO ACTION SECTION END */}
 
 
     </>

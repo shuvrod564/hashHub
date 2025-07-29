@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Header = () => {
@@ -6,15 +7,15 @@ const Header = () => {
         <>
             <header className="py-5 relative z-50">
                 <div className="container mx-auto px-5 flex justify-between items-center">
-                    <div className="flex items-center gap-2 text-2xl font-bold">
+                    <Link href="/" className="inline-block">
                         <Image
                             src={'/images/hashhub-logo.webp'}
                             alt='Hashhub Logo'
-                            width={32}
-                            height={32}
-                            className="w-6 h-6"
+                            width={131}
+                            height={48}
+                            className="w-auto h-10 2xl:h-12"
                         /> 
-                    </div>
+                    </Link>
                     <nav className="hidden md:flex space-x-8">
                         <a href="#" className="text-text-color no-underline font-medium hover:text-light-grey transition-colors duration-300">About</a>
                         <a href="#" className="text-text-color no-underline font-medium hover:text-light-grey transition-colors duration-300">Features</a>

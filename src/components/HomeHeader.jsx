@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
+import { ArrowRight, ArrowRightSmall } from './Icons'
 
 const HomeHeader = () => {
     const headerRef = useRef(null)
@@ -13,7 +14,7 @@ const HomeHeader = () => {
         const ctx = gsap.context(() => {
             const q = gsap.utils.selector(textWrapperRef)
 
-            gsap.from(q('h1, p, button'), {
+            gsap.from(q('h1, p, div'), {
                 opacity: 0,
                 y: 40,
                 duration: 1,
@@ -39,19 +40,19 @@ const HomeHeader = () => {
             <div className="py-20 lg:py-24 bg-primary relative overflow-hidden flex items-center rounded-2xl">
                 <div className="container flex flex-wrap items-center justify-between gap-10">
                     <div
-                        className="flex-1 min-w-[450px] max-w-[600px] text-center lg:text-left"
+                        className="flex-1 lg:min-w-[450px] lg:max-w-[600px] text-center lg:text-left"
                         ref={textWrapperRef}
                     >
-                        <h1 className="text-6xl font-bold leading-tighter text-white mb-6">
+                        <h1 className="lg:text-6xl md:text-4xl sm:text-3xl text-3xl font-bold leading-tighter text-white md:mb-6 mb-4">
                             All the tools you need for Social Media analytics
                         </h1>
                         <p className="text-lg leading-relaxed mb-9 max-w-lg lg:max-w-none mx-auto lg:mx-0 text-white text-opacity-80">
                             Prove the ROI of social media, plan more engaging content, and create automated white label analytics reports.
                         </p>
-                        <div ref={textWrapperRef}>
-                            <button className="btn-white rounded-3xl">
+                        <div>
+                            <button className="btn-white rounded-3xl !pr-5">
                                 Get Started to free{' '}
-                                <span className="text-2xl leading-none">&rarr;</span>
+                                <ArrowRightSmall className="size-6 ml-6" />
                             </button>
                         </div>
                         <p className="text-sm md:text-base lg:text-lg text-white text-opacity-60 mt-4">

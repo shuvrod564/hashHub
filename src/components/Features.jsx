@@ -99,7 +99,7 @@ const Features = () => {
           {data.map((feature, index) => (
             <div
               key={index}
-              className="feature-card bg-white rounded-lg c-shadow p-6 border border-gray-100 flex flex-col items-start text-left hover:bg-light hover:!shadow"
+              className="feature-card bg-white rounded-lg shadow p-6 border border-gray-100 flex flex-col items-start text-left hover:bg-light hover:!c_shadow"
             >
               <div className="w-12 h-12 bg-blue-100 text-primary-blue rounded-full flex items-center justify-center mb-4">
                 <span className="text-xl">{feature.icon}</span>
